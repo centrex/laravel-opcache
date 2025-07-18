@@ -10,7 +10,7 @@ This method is faster than Redis, Memcache, APC, and other PHP caching solutions
 Require this package with composer.
 
 ```shell
-composer require centrex/laravel-opcache
+composer require elcobvg/laravel-opcache
 ```
 
 Laravel 5.5 uses Package Auto-Discovery, so doesn't require you to manually add the ServiceProvider.
@@ -18,7 +18,7 @@ Laravel 5.5 uses Package Auto-Discovery, so doesn't require you to manually add 
 If you don't use auto-discovery or Laravel version 5.4 or older, add the ServiceProvider to the providers array in config/app.php
 
 ```php
-Centrex\Opcache\ServiceProvider::class,
+ElcoBvg\Opcache\ServiceProvider::class,
 ```
 
 Then, make sure you add the driver option to the stores array in config/cache.php
